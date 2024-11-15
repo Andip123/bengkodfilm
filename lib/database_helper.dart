@@ -34,23 +34,6 @@ CREATE TABLE todos (
   isCompleted INTEGER NOT NULL
 )
 ''');
-
-    // Menambahkan daftar film default
-    await db.insert('todos', {
-      'title': 'Laskar Pelangi',
-      'description': 'Film perjuangan pendidikan di sekolah daerah terpencil',
-      'isCompleted': 0
-    });
-    await db.insert('todos', {
-      'title': 'Dilan 1990',
-      'description': 'Film romantis kota Bandung',
-      'isCompleted': 0
-    });
-    await db.insert('todos', {
-      'title': 'The Manifeset Netflix',
-      'description': 'Film konspirasi pesawat melewati mesin waktu',
-      'isCompleted': 0
-    });
   }
 
   Future<List<Todo>> getTodos() async {

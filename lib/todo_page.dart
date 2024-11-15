@@ -94,7 +94,7 @@ class _TodoPageState extends State<TodoPage> {
                       IconButton(
                         icon: Icon(
                           Icons.check,
-                          color: todo.isCompleted == 1 ? Colors.green : null,
+                          color: todo.isCompleted == 1 ? const Color.fromARGB(255, 7, 125, 180) : null,
                         ),
                         onPressed: () => _toggleTodoCompletion(todo),
                       ),
@@ -115,7 +115,7 @@ class _TodoPageState extends State<TodoPage> {
             onPressed: _deleteCompletedTodos,
             child: Text('Hapus yang Selesai'),
             style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.red,
+              backgroundColor: const Color.fromARGB(255, 3, 200, 244),
             ),
           ),
         ],

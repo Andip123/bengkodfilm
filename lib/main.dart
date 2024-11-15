@@ -11,7 +11,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Aplikasi List Film',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
       ),
       home: TodoPage(),
     );
